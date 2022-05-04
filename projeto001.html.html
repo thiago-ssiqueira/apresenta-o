@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="estilo001.css">
+    <meta charset=U+1F609″>
+    <script src="https://kit.fontawesome.com/cde5abe01d.js" crossorigin="anonymous"></script>
+    <title>Apresentação</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logotsbom.png" alt="Logo Thiago Siqueira" width="40px">
+        </div>
+        <ul>
+            <li>
+                <a target="blank" href="https://github.com/frontgrota">github</a>
+            </li>
+            <li>
+                <a target="blank" href="mailto:thiagossiqueira81@gmmail.com">email</a>
+            </li>
+            <li>
+                <a target="blank" href="https://wa.me/5521999153577">telefone</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Thiago Siqueira</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrom">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+                
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                Olá, me chamo Thiago, sou carioca, tenho 29 anos e estou em transição de carreira.
+                    Iniciei  meus estudos através do curso de JavaScript no Curso em Video,
+                    exelentes aulas do professor Gustavo Guanabara. Agora estou me aventurando
+                    no Hiring Coders #3 em busca de aprendizado e experiêcia. 
+                </p>
+            </div>
+            <div class="form"> 
+                <p>Deixe seu contato!</p>
+            </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email &#128516;">
+                    <button>Enviar!</button>
+                </form>
+            </div><meta charset=U+1F609″>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
